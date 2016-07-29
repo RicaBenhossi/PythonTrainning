@@ -4,6 +4,6 @@ tip = 0.15
 
 meal = meal + (meal * tax)
 total = meal + (meal * tip)
-#teste de atualização!!!!!
+#Exibindo os dados na tela.
 print("%.2f" % total)
 print("Obrigado por usar o nosso sistema.")
