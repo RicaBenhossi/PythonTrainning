@@ -84,7 +84,7 @@ biggest_number(-10, -5, 5, 10)
 smallest_number(-10, -5, 5, 10)
 distance_from_zero(-10)
 
-# Ver o tipo de variável do dado.
+# Ver o tipo de variável de um dado.
 print(type(2))
 print(type(2.8))
 print(type("teste"))
