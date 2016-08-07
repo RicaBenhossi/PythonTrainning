@@ -37,6 +37,7 @@ def portres(numero):
         return cubo(numero)
     else:
         return "False"
+
 print("Função dentro de Função.")
 print(portres(3))
 
@@ -57,13 +58,13 @@ print(sqrt(25))
 # Importações Universais
 from math import *
 
-""" Algumas funções bem úteis em python """
+"""Algumas funções bem úteis em python"""
 
 # Maior número da sequência
 def biggest_number(*args):
     print (max(args))
     return max(args)
-    
+
 # Menor número da sequência
 def smallest_number(*args):
     print (min(args))

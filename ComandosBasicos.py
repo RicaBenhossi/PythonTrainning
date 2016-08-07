@@ -164,7 +164,6 @@ Comandos IF e ELIF
 # If e Elif (elseif)
 num = int(input("Digite um número: "))
 if num < 10:
-    
     print("O número digitado é menor que 10")
 elif num > 10:
     print("O número digitado é maior que 10")
