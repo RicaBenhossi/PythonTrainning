@@ -6,16 +6,13 @@ def nome_da_funcao(paramtro):
     instruções
 chamada da função
 """
+
 # Função sem passagem de parâmetros
-
-
 def teste():
     print("Teste de função")
 teste()
 
 # Função com passagem de parâmetros
-
-
 def teste_parametro(numero):
     numero *= 2
     print("O dobro do número digitado é %s" % (numero))
@@ -23,8 +20,6 @@ def teste_parametro(numero):
 teste_parametro(10)
 
 # Função com retorno
-
-
 def mutiplica(num1, num2):
     return num1 * num2
 
@@ -33,8 +28,6 @@ n2 = int(input("Digite outro número"))
 print("O resultado é: " + str(mutiplica(n1, n2)))
 
 # Função dentro de Função.
-
-
 def cubo(num):
     return num ** 3
 
@@ -50,6 +43,7 @@ print(portres(3))
 """
 Importação de Funções
 """
+
 # Importação genérica
 import math
 print("Importação genérica")
@@ -63,7 +57,7 @@ print(sqrt(25))
 # Importações Universais
 from math import *
 
-# Algumas funções bem úteis em python
+""" Algumas funções bem úteis em python """
 
 # Maior número da sequência
 def biggest_number(*args):
