@@ -4,7 +4,7 @@ Segue abaixo os comandos.
 """
 
 #Exibe algo na tela
-print ("Hello World")
+print("Hello World")
 
 #Variáveis não precisam de declaração de tipo.
 var_inteiro = 6
