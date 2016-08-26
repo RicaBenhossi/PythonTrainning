@@ -18,7 +18,7 @@ ListaExemplo[2] = 'Item 3 (ALTERADO)'
 print(ListaExemplo[2])
 
 
-"""Adicionando novos itens à uma lista (Criar índices)"""
+"""Adicionando novos itens à uma lista, criando um novo índice (APPEND)"""
 ListaExemplo.append('Item 4 (NOVO ITEM)')
 print(ListaExemplo[3])
 
@@ -27,4 +27,11 @@ print(ListaExemplo[3])
 print(len(ListaExemplo))
 print(ListaExemplo)
 
-"""Fatiamento de Lista"""
+"""Fatiamento de Lista - o intervalo vai de X(INCLUSIVE) até Y(EXCLUSIVE), ou seja, 
+um intevalo de 2 à 5 exibe os valores de índice 2, 3 e 4."""
+mala_de_viagem = ['Camisa', 'Calca', 'Blusa', 'Tenis', 'Bermuda', 'Bone']
+print('Fatia1' + str(mala_de_viagem[0:2]))
+print('Fatia2' + str(mala_de_viagem[2:3]))
+print('Fatia3' + str(mala_de_viagem[4:6]))
+print('Fatia4' + str(mala_de_viagem[1:5]))
+print('Fatia5' + str(mala_de_viagem[0:4]))
