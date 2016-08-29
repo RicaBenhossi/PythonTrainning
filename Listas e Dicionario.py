@@ -22,6 +22,8 @@ print(ListaExemplo[2])
 ListaExemplo.append('Item 4 (NOVO ITEM)')
 print(ListaExemplo[3])
 
+""" Removendo um item da lista (.REMOVE) """
+ListaExemplo.remove('Item 1')
 
 """ Exibindo o tamanho da lista """
 print(len(ListaExemplo))
@@ -78,3 +80,22 @@ menu['Salada cesar'] = 10.00
 menu['Filet Parmegiana'] = 80.00
 menu['Lentrecote'] = 100.00
 print('O L\'entrecote custa: ' + str(menu['Lentrecote']))
+
+""" Remover uma chave """
+animais_do_zoo = {'Unicornio' : 'Casa de Algodao Doce',
+                  'Preguica' : 'Exibicao da Floresta Tropical',
+                  'Tigre de Bengala' : 'Casa da Selva',
+                  'Fradinho do Atlantico' : 'Exibicao Artica',
+                  'Pinguim Saltador da Rocha' : 'Exibicao Artica'}
+print(animais_do_zoo)
+print()
+del animais_do_zoo['Fradinho do Atlantico']
+animais_do_zoo['Leao'] = 'Safari Park'
+print(animais_do_zoo)
+
+""" Listas dentro de Dicionários """
+Caixa = {'Dinheiro': 900, 
+         'Cheque': 350.78, 
+         'Cartao Debito': {'Master': 100, 'Visa': 200, 'Outros': 230},
+         'Cartao Credito': {'Master': 267, 'Visa': 200, 'Outros': 187}}
+
