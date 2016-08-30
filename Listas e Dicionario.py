@@ -94,8 +94,20 @@ animais_do_zoo['Leao'] = 'Safari Park'
 print(animais_do_zoo)
 
 """ Listas dentro de Dicionários """
-Caixa = {'Dinheiro': 900, 
-         'Cheque': 350.78, 
-         'Cartao Debito': {'Master': 100, 'Visa': 200, 'Outros': 230},
-         'Cartao Credito': {'Master': 267, 'Visa': 200, 'Outros': 187}}
+inventory = {
+    'gold' : 500,
+    'pouch' : ['silex', 'barbante', 'pedra preciosa'],
+    'backpack' : ['xilofone','adaga', 'saco de dormir','pedaco de pao']
+}
 
+# Adicionando uma chave 'burlap bag' a atribuindo uma lista a ela
+inventory['burlap bag'] = ['maca', 'pequeno rubi', 'bicho preguica']
+
+# Organizando a lista encontrada sob a chave 'pouch'
+inventory['pouch'].sort() 
+
+# Seu codigo aqui
+inventory['pocket'] = ['concha', 'amora estranha', 'sujeira']
+inventory['backpack'].sort()
+inventory['backpack'].remove('adaga')
+inventory['gold'] += 50
