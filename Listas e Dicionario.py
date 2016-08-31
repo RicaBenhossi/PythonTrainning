@@ -95,19 +95,25 @@ print(animais_do_zoo)
 
 """ Listas dentro de Dicionários """
 inventory = {
-    'gold' : 500,
-    'pouch' : ['silex', 'barbante', 'pedra preciosa'],
-    'backpack' : ['xilofone','adaga', 'saco de dormir','pedaco de pao']
-}
-
-# Adicionando uma chave 'burlap bag' a atribuindo uma lista a ela
-inventory['burlap bag'] = ['maca', 'pequeno rubi', 'bicho preguica']
-
-# Organizando a lista encontrada sob a chave 'pouch'
-inventory['pouch'].sort() 
-
-# Seu codigo aqui
+    'gold': 500,
+    'pouch': ['silex', 'barbante', 'pedra preciosa'],
+    'backpack': ['xilofone','adaga', 'saco de dormir','pedaco de pao'],
+    'Comida': {'Salsicha': 3, 'Bacon': 8, 'Feijao': 4, 'Coca Cola': 10}}
 inventory['pocket'] = ['concha', 'amora estranha', 'sujeira']
 inventory['backpack'].sort()
 inventory['backpack'].remove('adaga')
 inventory['gold'] += 50
+print(inventory)
+
+
+""" 
+Laços de Repetição com Dicionários e Listas
+
+SINTAXE - for contador in limite:
+              comando a cada contador
+"""
+
+ListaTeste = ['Primeiro item', 'Segundo Item', 'Terceiro Item']
+
+for int(x) in len(ListaTeste):
+    print(ListaTeste(x))
