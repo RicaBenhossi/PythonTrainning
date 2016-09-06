@@ -104,16 +104,3 @@ inventory['backpack'].sort()
 inventory['backpack'].remove('adaga')
 inventory['gold'] += 50
 print(inventory)
-
-
-""" 
-Laços de Repetição com Dicionários e Listas
-
-SINTAXE - for contador in limite:
-              comando a cada contador
-"""
-
-ListaTeste = ['Primeiro item', 'Segundo Item', 'Terceiro Item']
-
-for int(x) in len(ListaTeste):
-    print(ListaTeste(x))
