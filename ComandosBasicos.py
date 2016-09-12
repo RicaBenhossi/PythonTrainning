@@ -169,3 +169,7 @@ elif num > 10:
     print("O número digitado é maior que 10")
 else:
     print("O número digitado é 10")
+
+""" Quebrar comando longo em linhas - Use \ """
+print('This is te longest command line I have ever seen in python \
+in my entire life. God, this never endes...')
