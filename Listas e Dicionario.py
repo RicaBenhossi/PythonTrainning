@@ -22,8 +22,14 @@ print(ListaExemplo[2])
 ListaExemplo.append('Item 4 (NOVO ITEM)')
 print(ListaExemplo[3])
 
-""" Removendo um item da lista (.REMOVE) """
+""" Removendo um item da lista (.REMOVE ) """
+ListaExemplo = ['Item 1', 'Item 2', 'Item 3']
 ListaExemplo.remove('Item 1')
+
+""" Removendo um item da lista pelo ÍNDICE(.POP) """
+ListaExemplo = ['Item 1', 'Item 2', 'Item 3']
+ListaExemplo.pop(1)
+print(ListaExemplo)
 
 """ Exibindo o tamanho da lista """
 print(len(ListaExemplo))
