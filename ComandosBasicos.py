@@ -173,3 +173,21 @@ else:
 """ Quebrar comando longo em linhas - Use \ """
 print('This is te longest command line I have ever seen in python \
 in my entire life. God, this never endes...')
+
+""" Comando RANGE """
+
+# O comando range possui 3 formas:
+# range(STOP)
+x = ['num1', 'num2', 'num3', 'num4', 'num5']
+for y in range(3):
+    print(x[y])
+
+# range(START, STOP)
+x = ['num1', 'num2', 'num3', 'num4', 'num5']
+for y in range(1, 4):
+    print(x[y])
+
+# range(START, STOP, STEP)
+x = ['num1', 'num2', 'num3', 'num4', 'num5', 'num6']
+for y in range(1, 6, 2):
+    print(x[y])
