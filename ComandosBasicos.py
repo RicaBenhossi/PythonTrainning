@@ -191,3 +191,13 @@ for y in range(1, 4):
 x = ['num1', 'num2', 'num3', 'num4', 'num5', 'num6']
 for y in range(1, 6, 2):
     print(x[y])
+
+""" 
+Comando JOIN
+
+Usado paea adicionar carcateres aos itens da lista
+
+SINTAXE - 'o que se quer adicionar'.join(variável)
+"""
+nome = ['Jose, que', 'Maria, que', 'Joao, que', 'Antonia, que nao', 'ninguem']
+print(' amava '.join(nome))
