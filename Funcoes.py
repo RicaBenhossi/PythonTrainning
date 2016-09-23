@@ -58,33 +58,7 @@ print(sqrt(25))
 # Importações Universais
 from math import *
 
-"""Algumas funções bem úteis em python"""
-
-# Maior número da sequência
-def biggest_number(*args):
-    print (max(args))
-    return max(args)
-
-# Menor número da sequência
-def smallest_number(*args):
-    print (min(args))
-    return min(args)
-
-# Módulo de um número (distância até 0)
-def distance_from_zero(arg):
-    print (abs(arg))
-    return abs(arg)
-
-biggest_number(-10, -5, 5, 10)
-smallest_number(-10, -5, 5, 10)
-distance_from_zero(-10)
-
-# Ver o tipo de variável de um dado.
-print(type(2))
-print(type(2.8))
-print(type("teste"))
-
-# Planning a Trip
+""" Planning a Trip """
 
 def hotel_cost(night):
     return 140 * night
