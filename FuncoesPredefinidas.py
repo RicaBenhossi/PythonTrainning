@@ -17,20 +17,17 @@ print(x)
 
 """ Maior número da sequência """
 def biggest_number(*args):
-    print (max(args))
-    return max(args)
+    print(max(args))
 biggest_number(-10, -5, 5, 10)
 
 """ Menor número da sequência """
 def smallest_number(*args):
-    print (min(args))
-    return min(args)
+    print(min(args))
 smallest_number(-10, -5, 5, 10)
 
 """ Módulo de um número (distância até 0) """
 def distance_from_zero(arg):
-    print (abs(arg))
-    return abs(arg)
+    print(abs(arg))
 distance_from_zero(-10)
 
 """ Ver o tipo de variável de um dado. """
