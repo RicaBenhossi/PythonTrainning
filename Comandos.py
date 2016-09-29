@@ -3,6 +3,24 @@ Este arquivo é para lembrar os comandos mais básicos de python.
 Segue abaixo os comandos.
 """
 ------------------------------------------------------------------------------------
+
+"""
+Exibe algo na tela
+
+SINTAXE - print(O_que_se_deseja_exibir)
+"""
+
+print('Hello World')
+
+# Concatenação de string
+print("Teste" + " de cotatenação " + "de " + "Strings")
+
+# Concatenação/Formatação de String usado % (MELHOR JEITO)
+string1 = "Camelot"
+string2 = "besta"
+print ("Não vamos à %s. É um lugar %s pra dedéu." % (string1, string2))
+
+------------------------------------------------------------------------------------
 """
 Variáveis não precisam de declaração de tipo.
 """
@@ -31,23 +49,6 @@ vString = "Essa é uma String"
     print(vTexto[1])
     print(vTexto[0])
     print(vTexto)
-
-------------------------------------------------------------------------------------
-"""
-Exibe algo na tela
-
-SINTAXE - print(O_que_se_deseja_exibir)
-"""
-
-print('Hello World')
-
-# Concatenação de string
-print("Teste" + " de cotatenação " + "de " + "Strings")
-
-# Concatenação/Formatação de String usado % (MELHOR JEITO)
-string1 = "Camelot"
-string2 = "besta"
-print ("Não vamos à %s. É um lugar %s pra dedéu." % (string1, string2))
 
 ------------------------------------------------------------------------------------
 """
