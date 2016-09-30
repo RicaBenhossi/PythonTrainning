@@ -286,6 +286,12 @@ while count < 10:
     print "Ola, sou um while e a contagem e", count
     count += 1
 
+# Pode ter uma condição mais dinâmica como no exemplo abaixo
+resposta = input('Gosta de Goiaba? (s/n): ').upper()
+while (resposta != 'n' and resposta != 's'):
+    resposta = input('Responda s para SIM e n pra NÃO. Digite novamente.')
+print('Resposta registrada')
+
 ------------------------------------------------------------------------------------
 """ 
 Comando RANGE 
