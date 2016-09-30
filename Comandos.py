@@ -21,6 +21,46 @@ string2 = "besta"
 print ("Não vamos à %s. É um lugar %s pra dedéu." % (string1, string2))
 
 ------------------------------------------------------------------------------------
+""" 
+Quebrar comando longo em linhas - Use \ 
+"""
+
+print('This is te longest command line I have ever seen in python \
+in my entire life. God, this never endes...')
+
+------------------------------------------------------------------------------------
+"""
+Operadores Matemáticos
+"""
+
+addition = 72 + 23
+subtraction = 108 - 204
+multiplication = 108 * 0.5
+division = 108 / 9
+
+#Exponenciação
+eggs = 10 ** 2
+print(eggs)
+
+#Resto da divisão ineteria
+RestoDiv = 9 % 2
+print (RestoDiv)
+
+------------------------------------------------------------------------------------
+"""
+Condicionais e Fluxo de Controle
+
+Sinalizadores de comparação
+
+Igual à (==)
+Diferente de (!=)
+Menor que (<)
+Menor igual à (<=)
+Maior que (>)
+Maior igual à (>=)
+"""
+
+------------------------------------------------------------------------------------
 """
 Variáveis não precisam de declaração de tipo.
 """
@@ -29,7 +69,7 @@ vInteiro = 6
 vFloat = 10.87
 vBooleano = True
 vLista = ['item 1', 'item2'] # ARRAY
-vChave = {'Item1 ': 10, 'Item2' :50} # ARRAY com Índices
+vDicionario = {'Item1 ': 10, 'Item2' :50} # ARRAY com Índices 
 vString = "Essa é uma String"
     #CUIDADO: o Python interpreta o apóstrofo como fechamento de string. Corriga com \
     #Exemplo de código com erro: vTextoApostrofo = 'There's a problem Huston!''
@@ -74,46 +114,101 @@ print(str(vNumero))
 # A notação com ponto como em lower e upper é necessária pois estes métodos só funcionam com STRING
 # Já os métodos str() e len() fincionam com outros tipos de variáves.
 
-
-------------------------------------------------------------------------------------
-""" 
-Quebrar comando longo em linhas - Use \ 
-"""
-
-print('This is te longest command line I have ever seen in python \
-in my entire life. God, this never endes...')
-
 ------------------------------------------------------------------------------------
 """
-Operadores Matemáticos
+LISTAS
 """
 
-addition = 72 + 23
-subtraction = 108 - 204
-multiplication = 108 * 0.5
-division = 108 / 9
+# Alterando valor de uma posição da lista
+ListaExemplo = ['Item 1', 'Item 2', 'Item 3']
+print(ListaExemplo[2])
+ListaExemplo[2] = 'Item 3 (ALTERADO)'
+print(ListaExemplo[2])
 
-#Exponenciação
-eggs = 10 ** 2
-print(eggs)
 
-#Resto da divisão ineteria
-RestoDiv = 9 % 2
-print (RestoDiv)
+# Adicionando novos itens à uma lista, criando um novo índice (APPEND)
+ListaExemplo.append('Item 4 (NOVO ITEM)')
+print(ListaExemplo[3])
+
+# Removendo um item da lista (.REMOVE )
+ListaExemplo = ['Item 1', 'Item 2', 'Item 3']
+ListaExemplo.remove('Item 1')
+
+# Removendo um item da lista pelo ÍNDICE (.POP)
+ListaExemplo = ['Item 1', 'Item 2', 'Item 3']
+ListaExemplo.pop(1)
+print(ListaExemplo)
+
+# Exibindo o tamanho da lista
+print(len(ListaExemplo))
+print(ListaExemplo)
+
+# Fatiamento de Lista - o intervalo vai de X(INCLUSIVE) até Y(EXCLUSIVE), ou seja, 
+# um intevalo de 2 à 5 exibe os valores de índice 2, 3 e 4.
+mala_de_viagem = ['Camisa', 'Calca', 'Blusa', 'Tenis', 'Bermuda', 'Bone']
+print('Fatia1' + str(mala_de_viagem[0:2]))
+print('Fatia2' + str(mala_de_viagem[2:3]))
+print('Fatia3' + str(mala_de_viagem[4:6]))
+print('Fatia4' + str(mala_de_viagem[1:5]))
+print('Fatia5' + str(mala_de_viagem[0:4]))
+
+# O Fatiamento também pode ser feito em STRING, uma vez que elas nada mais sāo do que
+# uma lista de caracteres
+
+# Pegar de um índice até o fim
+fatia_string = 'Treinamento Python'
+print(fatia_string[12:])
+
+# Pegar do começo até um determinado índice (EXCLUSIVE)
+print(fatia_string[:11])
+
+# Pegar um intervalo
+print(fatia_string[4:13])
+
+# Buscando os índices de um determinado item dentro de uma lista (.INDEX)
+mala_de_viagem = ['Camisa', 'Calca', 'Blusa', 'Tenis', 'Bermuda', 'Bone']
+print(mala_de_viagem.index('Blusa'))
+
+# Inserindo um item em um índice específico (.INSERT)
+mala_de_viagem.insert(1, 'Jaqueta')
+print(mala_de_viagem[1])
 
 ------------------------------------------------------------------------------------
 """
-Condicionais e Fluxo de Controle
-
-Sinalizadores de comparação
-
-Igual à (==)
-Diferente de (!=)
-Menor que (<)
-Menor igual à (<=)
-Maior que (>)
-Maior igual à (>=)
+DICIONÁRIO
 """
+
+# Adicionando novas chaves e atribuindo valores a elas
+menu = {} #Iniciar uma Chave vazia
+menu['Salada cesar'] = 10.00
+menu['Filet Parmegiana'] = 80.00
+menu['Lentrecote'] = 100.00
+print('O L\'entrecote custa: ' + str(menu['Lentrecote']))
+
+# Remover uma chave (DEL)
+animais_do_zoo = {'Unicornio' : 'Casa de Algodao Doce',
+                  'Preguica' : 'Exibicao da Floresta Tropical',
+                  'Tigre de Bengala' : 'Casa da Selva',
+                  'Fradinho do Atlantico' : 'Exibicao Artica',
+                  'Pinguim Saltador da Rocha' : 'Exibicao Artica'}
+print(animais_do_zoo)
+print()
+del animais_do_zoo['Fradinho do Atlantico']
+animais_do_zoo['Leao'] = 'Safari Park'
+print(animais_do_zoo)
+
+# Pode-se utilizar Listas dentro de Dicionários
+inventory = {
+    'gold': 500,
+    'pouch': ['silex', 'barbante', 'pedra preciosa'],
+    'backpack': ['xilofone','adaga', 'saco de dormir','pedaco de pao'],
+    'Comida': {'Salsicha': 3, 'Bacon': 8, 'Feijao': 4, 'Coca Cola': 10}}
+inventory['pocket'] = ['concha', 'amora estranha', 'sujeira']
+inventory['backpack'].sort()
+inventory['backpack'].remove('adaga')
+inventory['gold'] += 50
+print(inventory)
+
 ------------------------------------------------------------------------------------
 """
 Comandos IF e ELIF
