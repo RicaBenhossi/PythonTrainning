@@ -13,12 +13,12 @@ SINTAXE - print(O_que_se_deseja_exibir)
 print('Hello World')
 
 # Concatenação de string
-print("Teste" + " de cotatenação " + "de " + "Strings")
+print('Teste' + ' de cotatenação ' + 'de ' + 'Strings')
 
 # Concatenação/Formatação de String usado % (MELHOR JEITO)
-string1 = "Camelot"
-string2 = "besta"
-print ("Não vamos à %s. É um lugar %s pra dedéu." % (string1, string2))
+string1 = 'Camelot'
+string2 = 'besta'
+print ('Não vamos à %s. É um lugar %s pra dedéu.' % (string1, string2))
 
 ------------------------------------------------------------------------------------
 """ 
@@ -70,7 +70,7 @@ vFloat = 10.87
 vBooleano = True
 vLista = ['item 1', 'item2'] # ARRAY
 vDicionario = {'Item1 ': 10, 'Item2' :50} # ARRAY com Índices 
-vString = "Essa é uma String"
+vString = 'Essa é uma String'
     #CUIDADO: o Python interpreta o apóstrofo como fechamento de string. Corriga com \
     #Exemplo de código com erro: vTextoApostrofo = 'There's a problem Huston!''
 
