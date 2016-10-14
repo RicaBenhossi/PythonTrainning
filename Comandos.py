@@ -2,7 +2,7 @@
 Este arquivo é para lembrar os comandos mais básicos de python.
 Segue abaixo os comandos.
 """
-------------------------------------------------------------------------------------
+##############################################################################
 
 """
 Exibe algo na tela
@@ -20,7 +20,7 @@ string1 = 'Camelot'
 string2 = 'besta'
 print ('Não vamos à %s. É um lugar %s pra dedéu.' % (string1, string2))
 
-------------------------------------------------------------------------------------
+##############################################################################
 """ 
 Quebrar comando longo em linhas - Use \ 
 """
@@ -28,7 +28,7 @@ Quebrar comando longo em linhas - Use \
 print('This is te longest command line I have ever seen in python \
 in my entire life. God, this never endes...')
 
-------------------------------------------------------------------------------------
+##############################################################################
 """
 Operadores Matemáticos
 """
@@ -46,7 +46,7 @@ print(eggs)
 RestoDiv = 9 % 2
 print (RestoDiv)
 
-------------------------------------------------------------------------------------
+##############################################################################
 """
 Condicionais e Fluxo de Controle
 
@@ -60,7 +60,7 @@ Maior que (>)
 Maior igual à (>=)
 """
 
-------------------------------------------------------------------------------------
+##############################################################################
 """
 Variáveis não precisam de declaração de tipo.
 """
@@ -90,7 +90,7 @@ vString = 'Essa é uma String'
     print(vTexto[0])
     print(vTexto)
 
-------------------------------------------------------------------------------------
+##############################################################################
 """
 Métodos de String
 """
@@ -114,7 +114,30 @@ print(str(vNumero))
 # A notação com ponto como em lower e upper é necessária pois estes métodos só funcionam com STRING
 # Já os métodos str() e len() fincionam com outros tipos de variáves.
 
-------------------------------------------------------------------------------------
+##############################################################################
+"""
+Data e Hora.
+"""
+
+#Atribuindo a hora atual à uma variavél
+datahora = datetime.now() 
+print(datahora)
+
+# Desmembrando a data.
+print(datahora.year)
+print(datahora.month)
+print(datahora.day) 
+
+# Formatando data
+print("%s/%s/%s" % (datahora.day, datahora.month, datahora.year))
+
+# Desmembrando e fomatando a hora
+print("%s:%s:%s" % (datahora.hour, datahora.minute, datahora.second)) 
+
+# Data e hora formatados.
+print("%s/%s/%s %s:%s:%s" % (datahora.day, datahora.month, datahora.year, datahora.hour, datahora.minute, datahora.second))
+
+##############################################################################
 """
 LISTAS
 """
@@ -173,7 +196,7 @@ print(mala_de_viagem.index('Blusa'))
 mala_de_viagem.insert(1, 'Jaqueta')
 print(mala_de_viagem[1])
 
-------------------------------------------------------------------------------------
+##############################################################################
 """
 DICIONÁRIO
 """
@@ -209,7 +232,7 @@ inventory['backpack'].remove('adaga')
 inventory['gold'] += 50
 print(inventory)
 
-------------------------------------------------------------------------------------
+##############################################################################
 """
 Comandos IF e ELIF
 
@@ -231,7 +254,8 @@ elif num > 10:
 else:
     print("O número digitado é 10")
 
-------------------------------------------------------------------------------------
+
+##############################################################################
 """
 FUNÇÕES
 
@@ -260,9 +284,9 @@ teste_parametro(10)
 def mutiplica(num1, num2):
     return num1 * num2
 
-------------------------------------------------------------------------------------
-""" 
-Laço de Repetição FOR
+##############################################################################
+"""
+LAÇO DE REPETIÇÃO FOR
 
 SINTAXE - for contador in limite: 
                comando a cada contador 
@@ -273,9 +297,9 @@ names = ['Adam', 'Alex', 'Mariah', 'Martine', 'Columbus']
 for item in names:
     print(item)
 
-------------------------------------------------------------------------------------
+##############################################################################
 """
-Laço de Repetição while
+LAÇO DE REPETIÇÃO WHILE
 
 SINTAXE -   while condição:
                 comando
@@ -292,7 +316,40 @@ while (resposta != 'n' and resposta != 's'):
     resposta = input('Responda s para SIM e n pra NÃO. Digite novamente.')
 print('Resposta registrada')
 
-------------------------------------------------------------------------------------
+##############################################################################
+"""
+LAÇO DE REPETIÇÃO WHILE / ELSE
+
+Similar ao IF/ELSE porém nesse caso o else SEMPRE SERÁ EXECUTADO.
+SINTAXE -   while condição:
+                comando
+            else:
+                comando
+"""
+
+count = 0
+while count < 10:
+    print('Ola, sou um while e a contagem e', count)
+    count += 1
+else:
+    print('Depois de executado, cai no ELSE')
+
+##############################################################################
+"""
+Comando BREAK
+
+O comando BREAK serve para interromper a execução de um laço.
+"""
+x = 0
+while x < 10:
+    if (x*2 == 8):
+        print('parou no BREAK')
+        break
+    else:
+        print('Passou fora do break')
+        x += 1
+
+##############################################################################
 """ 
 Comando RANGE 
 """
@@ -313,7 +370,7 @@ x = ['num1', 'num2', 'num3', 'num4', 'num5', 'num6']
 for y in range(1, 6, 2):
     print(x[y])
 
-------------------------------------------------------------------------------------
+##############################################################################
 """ 
 Comando JOIN
 
@@ -324,7 +381,7 @@ SINTAXE - 'o que se quer adicionar'.join(variável)
 nome = ['Jose, que', 'Maria, que', 'Joao, que', 'Antonia, que nao', 'ninguem']
 print(' amava '.join(nome))
 
-------------------------------------------------------------------------------------
+##############################################################################
 """
 Importar bibliotecas
 As bibliotecas possuem diversas classes e pode-se importar a biblioteca toda, ou apenas
@@ -344,25 +401,4 @@ from datetime*
 # Importar a classe datetime da bibioteca datetime Python
 from datetime import datetime
 
-------------------------------------------------------------------------------------
-"""
-Data e Hora.
-"""
-
-#Atribuindo a hora atual à uma variavél
-datahora = datetime.now() 
-print(datahora)
-
-# Desmembrando a data.
-print(datahora.year)
-print(datahora.month)
-print(datahora.day) 
-
-# Formatando data
-print("%s/%s/%s" % (datahora.day, datahora.month, datahora.year))
-
-# Desmembrando e fomatando a hora
-print("%s:%s:%s" % (datahora.hour, datahora.minute, datahora.second)) 
-
-# Data e hora formatados.
-print("%s/%s/%s %s:%s:%s" % (datahora.day, datahora.month, datahora.year, datahora.hour, datahora.minute, datahora.second))
+##############################################################################
