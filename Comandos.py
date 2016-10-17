@@ -20,6 +20,11 @@ string1 = 'Camelot'
 string2 = 'besta'
 print ('Não vamos à %s. É um lugar %s pra dedéu.' % (string1, string2))
 
+# Ao colocar , (vírgula) no fim do print, o próximo print continua na mesma 
+# linha
+print('teste de print '),
+print('com virgula.')
+
 ##############################################################################
 """ 
 Quebrar comando longo em linhas - Use \ 
@@ -116,7 +121,7 @@ print(str(vNumero))
 
 ##############################################################################
 """
-Data e Hora.
+Data e Hora
 """
 
 #Atribuindo a hora atual à uma variavél
