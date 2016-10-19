@@ -2,25 +2,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python",
-            "type": "python",
-            "request": "launch",
-            "stopOnEntry": true,
-            "program": "${file}",
-            "debugOptions": [
-                "WaitOnAbnormalExit",
-                "WaitOnNormalExit",
-                "RedirectOutput"
-            ]
-        },
-        {
             "name": "Python Console App",
             "type": "python",
+            "pythonPath":"${config.python.pythonPath}",
             "request": "launch",
             "stopOnEntry": true,
-            "program": "${file}",
+            "console": "integratedTerminal",
             "externalConsole": true,
+            "program": "${file}",
+            "cwd": "${workspaceRoot}",
             "debugOptions": [
+                "RedirectOutput",
                 "WaitOnAbnormalExit",
                 "WaitOnNormalExit"
             ]
