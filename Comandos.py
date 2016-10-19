@@ -352,13 +352,23 @@ for item in names:
 """
 LAÇO DE REPETIÇÃO FOR / ELSE
 
+Similar ao IF/ELSE mas nesse caso o else SÓ SERÁ EXECUTADO SE O FOR EXECUTAR 
+INTEIRO. Se houver um BREAK por exemplo ele não será executado.
 SINTAXE -   for contador in limite:
                 comando a cada contador
             else:
                 commando
 """
 
+fruits = ['banana', 'maca', 'laranja', 'vagem', 'pera', 'uva']
 
+print 'Voce tem...'
+for f in fruits:
+    if f == 'vagem':
+        print('O vagem nao e uma fruta!')
+    print('A', f)
+else:
+    print('Uma excelente selecao de frutas!')
 
 ###############################################################################
 """
@@ -383,7 +393,7 @@ print('Resposta registrada')
 """
 LAÇO DE REPETIÇÃO WHILE / ELSE
 
-Similar ao IF/ELSE porém nesse caso o else SEMPRE SERÁ EXECUTADO.
+Similar ao IF/ELSE mas nesse caso o else SEMPRE SERÁ EXECUTADO AO FIM DO WHILE
 SINTAXE -   while condição:
                 comando
             else:
