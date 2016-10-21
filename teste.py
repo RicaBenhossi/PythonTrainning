@@ -10,6 +10,10 @@ def is_prime(x):
         return True
 
 resultado = {True: 'e', False: 'nao e'}
-num = int(input('Digite o numero: '))
-
-print('O numero %s %s primo.' % (num, resultado[is_prime(num)]))
+num = 0
+while (num < 1):
+    num = int(input('Digite o numero: '))
+    if (num == 0):
+        print('Digite um numero maior que 0.')
+else:
+    print('O numero %s %s primo.' % (num, resultado[is_prime(num)]))
