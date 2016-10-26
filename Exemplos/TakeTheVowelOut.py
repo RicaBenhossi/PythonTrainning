@@ -14,3 +14,4 @@ def anti_vowel(text):
 
 x = str(input('Type the text you want to take the vowels out: '))
 print('The result is %s.' % (anti_vowel(x)))
+    
