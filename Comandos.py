@@ -447,7 +447,7 @@ for y in range(1, 6, 2):
 """
 Comando JOIN
 
-Usado paea adicionar carcateres aos itens da lista
+Usado para adicionar carcateres aos itens da lista
 
 SINTAXE - 'o que se quer adicionar'.join(variável)
 """
