@@ -360,7 +360,7 @@ for item in names:
 """
 LAÇO DE REPETIÇÃO FOR / ELSE
 
-Similar ao IF/ELSE mas nesse caso o else SÓ SERÁ EXECUTADO SE O FOR EXECUTAR 
+Similar ao IF/ELSE mas nesse caso o else SÓ SERÁ EXECUTADO SE O FOR EXECUTAR
 INTEIRO. Se houver um BREAK por exemplo ele não será executado.
 SINTAXE -   for contador in limite:
                 comando a cada contador
@@ -370,7 +370,7 @@ SINTAXE -   for contador in limite:
 
 fruits = ['banana', 'maca', 'laranja', 'vagem', 'pera', 'uva']
 
-print 'Voce tem...'
+print('Voce tem...')
 for f in fruits:
     if f == 'vagem':
         print('O vagem nao e uma fruta!')
@@ -467,7 +467,7 @@ print(' amava '.join(nome))
 Importar bibliotecas
 As bibliotecas possuem diversas classes e pode-se importar a biblioteca toda,
 ou apenas a classe desejada.
-*** Para mais bibliotecas e funções prontas, cheque o arquivo 
+*** Para mais bibliotecas e funções prontas, cheque o arquivo
     FUNCOEPREDEFINIDAS.py ***
 
 SINTAXE
