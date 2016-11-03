@@ -122,10 +122,13 @@ print(str(vNumero))
 # só funcionam com STRING
 # Já os métodos str() e len() fincionam com outros tipos de variáves.
 
-# Split
-# O comando split separa o conteúdo da string no ponto onde encontra o caracter
-# setado como parâmetro, transformando em uma lista.
-# SINTAXE: variável.split('parametro')
+"""
+SPLIT
+
+O comando split separa o conteúdo da string no ponto onde encontra o caracter
+setado como parâmetro, transformando em uma lista.
+SINTAXE: variável.split('parametro')
+"""
 
 text = 'Test of command split on a string'
 print(text.split(' '))
