@@ -1,4 +1,8 @@
+"""This program removes duplication in a list."""
+
+
 def remove_duplicates(numbers):
+    """Remove the duplicate."""
     x = 0
     while (x < len(numbers)):
         y = x + 1
