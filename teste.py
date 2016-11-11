@@ -1,13 +1,9 @@
-def remove_duplicates(numbers):
-    x = 0
-    while (x < len(numbers)):
-        y = x + 1
-        while (y < len(numbers)):
-            if (numbers[x] == numbers[y]):
-                numbers.pop(y)
-            else:
-                y += 1
-        x += 1
-    return(numbers)
+def median(numbers):
+    numbers = sorted(numbers)
+    position = int(len(numbers) / 2)
+    if ((position % 2) != 0):
+        return((numbers[position] + numbers[position - 1]) / 2)
+    else:
+        return(numbers[position])
 
-print(remove_duplicates([5, 5, 2, 3, 1, 3, 5]))
+print(median([7, 12, 3, 1, 6]))

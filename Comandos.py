@@ -98,6 +98,21 @@ print(vTexto)
 
 ###############################################################################
 """
+TYPES
+
+Exibe o tipo da variável
+SINTAXE - type(variavel)
+"""
+
+x = 'teste de string'
+print(type(x))
+y = 3.9
+print(type(y))
+z = 5
+print(type(z))
+
+###############################################################################
+"""
 Métodos de String
 """
 
@@ -251,6 +266,17 @@ for a, b in zip(list_a, list_b):
         print(a)
     else:
         print(b)
+
+###############################################################################
+"""
+SORTED
+
+Organiza a lista de forma crescente.
+SINTAXE - sortred(lista)
+"""
+
+lista = [2, 8, 4, 3, 6, 7, 1]
+print(sorted(lista))
 
 ###############################################################################
 """
