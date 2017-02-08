@@ -1,17 +1,26 @@
-notas = [100, 100, 90, 40, 80, 100, 85, 70, 90, 65, 90, 85, 50.5]
+grades = [100, 100, 90, 40, 80, 100, 85, 70, 90, 65, 90, 85, 50.5]
 
+def print_grades(grades):
+    for grade in grades:
+        print grade
 
-def grades_sum(scores):
+def grades_sum(grades):
     total = 0
-    x = 0
-    while x < len(scores):
-        total += scores[x]
-        x += 1
-    print(total)
+    for grade in grades: 
+        total += grade
     return total
-
-
+    
 def grades_average(grades):
-    return (grades_sum(grades) / float(len(grades)))
+    sum_of_grades = grades_sum(grades)
+    average = sum_of_grades / float(len(grades))
+    return average
 
-print(grades_average(notas))
+def grades_variance(scores):
+    average = grades_average(scores)
+    variance = 0
+    for nota in scores:
+        variance += (average - score) ** 2
+        nota += 1
+    return (variance / (len(scores)))
+
+print(grades_variance)
