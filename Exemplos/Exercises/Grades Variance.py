@@ -28,9 +28,4 @@ def grades_variance(scores):
     return (variance / (len(scores)))
 
 
-def grades_std_deviation(variance):
-    return(variance ** (1/2))
-
-
-variance = grades_variance(grades)
-print(grades_std_deviation(variance))
+print(grades_variance(grades))
