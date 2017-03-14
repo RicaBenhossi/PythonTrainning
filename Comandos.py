@@ -314,6 +314,23 @@ inventory['backpack'].remove('adaga')
 inventory['gold'] += 50
 print(inventory)
 
+# Exibindo Um Dicionário
+
+my_dict = {
+    "Name": "Natalia",
+    "Age": 31,
+    "BDFL": True
+}
+
+# Exibe todos os items do Dicionário
+print(my_dict.items())
+
+# Exibe somente as CHAVES ou ÍNDICES do Dicionário
+print(my_dict.keys())
+
+# EXibe apenas os VALORES das chaves do dicionário
+print(my_dict.values())
+
 ###############################################################################
 """
 Comandos IF e ELIF
