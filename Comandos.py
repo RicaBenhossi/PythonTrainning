@@ -331,6 +331,10 @@ print(my_dict.keys())
 # EXibe apenas os VALORES das chaves do dicionário
 print(my_dict.values())
 
+# Exibe os valores e as chaves com espaço entre eles. A "," separa os valores
+for key in my_dict:
+    print(key, my_dict[key])
+
 ###############################################################################
 """
 Comandos IF e ELIF
