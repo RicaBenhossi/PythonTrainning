@@ -231,6 +231,18 @@ print(mala_de_viagem.index('Blusa'))
 mala_de_viagem.insert(1, 'Jaqueta')
 print(mala_de_viagem[1])
 
+
+"""
+Elaborando listas com uma lógica
+
+Listas podem ser feitas e preenchidas automaticamente de acordo com uma lógica
+"""
+
+evens_to_50 = [i for i in range(51) if i % 2 == 0]
+print(evens_to_50)
+
+print('A'^'B')
+
 ###############################################################################
 """
 ENUMERATE
