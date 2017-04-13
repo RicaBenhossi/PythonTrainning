@@ -241,7 +241,15 @@ Listas podem ser feitas e preenchidas automaticamente de acordo com uma lógica
 evens_to_50 = [i for i in range(51) if i % 2 == 0]
 print(evens_to_50)
 
-print('A'^'B')
+print('A' ^ 'B')
+
+
+cubes_by_four = [(x ** 3) for x in range(1, 11) if ((x ** 3) % 4 == 0)] 
+print(cubes_by_four)
+
+"""
+Fatiamento de listas
+"""
 
 ###############################################################################
 """
