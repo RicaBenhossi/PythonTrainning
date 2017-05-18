@@ -274,13 +274,13 @@ print(mala_de_viagem[1])
 to_five = ['A', 'B', 'C', 'D', 'E']
 
 # Exibe D e E
-print to_five[3:]
+print(to_five[3:])
 
 # Exibe A e B
-print to_five[:2]
+print(to_five[:2])
 
 # Exibe A, C, E
-print to_five[::2]
+print(to_five[::2])
 
 
 ###############################################################################
