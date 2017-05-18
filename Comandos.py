@@ -210,27 +210,7 @@ print('Fatia3' + str(mala_de_viagem[4:6]))
 print('Fatia4' + str(mala_de_viagem[1:5]))
 print('Fatia5' + str(mala_de_viagem[0:4]))
 
-# O Fatiamento também pode ser feito em STRING, uma vez que elas nada mais sāo
-# do que uma lista de caracteres
-
-# Pegar de um índice até o fim
-fatia_string = 'Treinamento Python'
-print(fatia_string[12:])
-
-# Pegar do começo até um determinado índice (EXCLUSIVE)
-print(fatia_string[:11])
-
-# Pegar um intervalo
-print(fatia_string[4:13])
-
-# Buscando os índices de um determinado item dentro de uma lista (.INDEX)
-mala_de_viagem = ['Camisa', 'Calca', 'Blusa', 'Tenis', 'Bermuda', 'Bone']
-print(mala_de_viagem.index('Blusa'))
-
-# Inserindo um item em um índice específico (.INSERT)
-mala_de_viagem.insert(1, 'Jaqueta')
-print(mala_de_viagem[1])
-
+###############################################################################
 
 """
 Elaborando listas com uma lógica
@@ -266,6 +246,42 @@ choices = ['pizza', 'massa', 'salada', 'nachos']
 print('Suas opcoes sao:')
 for index, item in enumerate(choices):
     print(index + 1, item)
+
+# O Fatiamento também pode ser feito em STRING, uma vez que elas nada mais sāo
+# do que uma lista de caracteres
+
+# Pegar de um índice até o fim
+fatia_string = 'Treinamento Python'
+print(fatia_string[12:])
+
+# Pegar do começo até um determinado índice (EXCLUSIVE)
+print(fatia_string[:11])
+
+# Pegar um intervalo
+print(fatia_string[4:13])
+
+# Buscando os índices de um determinado item dentro de uma lista (.INDEX)
+mala_de_viagem = ['Camisa', 'Calca', 'Blusa', 'Tenis', 'Bermuda', 'Bone']
+print(mala_de_viagem.index('Blusa'))
+
+# Inserindo um item em um índice específico (.INSERT)
+mala_de_viagem.insert(1, 'Jaqueta')
+print(mala_de_viagem[1])
+
+# Fatiamento de Lista. Padrão list = [INICIO DA LISTA:FIM DA LISTA:PASSO DA LISTA]
+# Omitindo Índices
+
+to_five = ['A', 'B', 'C', 'D', 'E']
+
+# Exibe D e E
+print to_five[3:]
+
+# Exibe A e B
+print to_five[:2]
+
+# Exibe A, C, E
+print to_five[::2]
+
 
 ###############################################################################
 """
