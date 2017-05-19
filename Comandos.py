@@ -231,6 +231,24 @@ print(cubes_by_four)
 Fatiamento de listas
 """
 
+# Fatiamento de Lista. Padrão list = [INICIO DA LISTA:FIM DA LISTA:PASSO DA LISTA]
+# Omitindo Índices
+
+to_five = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
+
+
+# Exibe D e E
+print(to_five[3:])
+
+# Exibe A e B
+print(to_five[:2])
+
+# Exibe A, C, E
+print(to_five[::2])
+
+# Exibe
+print(to_five[1:8:4])
+
 ###############################################################################
 """
 ENUMERATE
@@ -267,20 +285,6 @@ print(mala_de_viagem.index('Blusa'))
 # Inserindo um item em um índice específico (.INSERT)
 mala_de_viagem.insert(1, 'Jaqueta')
 print(mala_de_viagem[1])
-
-# Fatiamento de Lista. Padrão list = [INICIO DA LISTA:FIM DA LISTA:PASSO DA LISTA]
-# Omitindo Índices
-
-to_five = ['A', 'B', 'C', 'D', 'E']
-
-# Exibe D e E
-print(to_five[3:])
-
-# Exibe A e B
-print(to_five[:2])
-
-# Exibe A, C, E
-print(to_five[::2])
 
 
 ###############################################################################
