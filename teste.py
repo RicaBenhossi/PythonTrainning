@@ -8,10 +8,6 @@ print(my_dict.items())
 print(my_dict.keys())
 print(my_dict.values())
 
-teste git cloud
-
-new git test at home
-
 for key in my_dict:
     print(key, my_dict[key])
 
