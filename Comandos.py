@@ -231,7 +231,7 @@ print(cubes_by_four)
 Fatiamento de listas
 """
 
-# Fatiamento de Lista. Padrão list = [INICIO DA LISTA:FIM DA LISTA:PASSO DA LISTA]
+# Fatiamento de Lista. Padrão list = [INICIO DA LISTA:FIM DA LISTA:PASSO DA LISTA]000000000000000000000000000000000000000000000000000000000000000000
 # Omitindo Índices
 
 to_five = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
