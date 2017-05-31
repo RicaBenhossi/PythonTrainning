@@ -249,6 +249,11 @@ print(to_five[::2])
 # Exibe
 print(to_five[1:8:4])
 
+# Invertendo a lista
+backwards = to_five[::-1]
+print(backwards)
+
+
 ###############################################################################
 """
 ENUMERATE
