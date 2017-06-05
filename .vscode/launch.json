@@ -4,7 +4,7 @@
         {
             "name": "Python Console App",
             "type": "python",
-            "pythonPath":"${config.python.pythonPath}",
+            "pythonPath":"${config:python.pythonPath}",
             "request": "launch",
             "stopOnEntry": true,
             "console": "integratedTerminal",
