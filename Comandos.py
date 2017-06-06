@@ -42,6 +42,8 @@ addition = 72 + 23
 subtraction = 108 - 204
 multiplication = 108 * 0.5
 division = 108 / 9
+divisionInteger = 20 // 3
+print(divisionInteger)
 
 # Exponenciação
 eggs = 10 ** 2
