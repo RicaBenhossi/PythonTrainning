@@ -42,8 +42,6 @@ addition = 72 + 23
 subtraction = 108 - 204
 multiplication = 108 * 0.5
 division = 108 / 9
-divisionInteger = 20 // 3
-print(divisionInteger)
 
 # Exponenciação
 eggs = 10 ** 2
@@ -52,6 +50,10 @@ print(eggs)
 # Resto da divisão ineteria
 RestoDiv = 9 % 2
 print(RestoDiv)
+
+# Divisão inteira
+divisionInteger = 10 // 3
+print(divisionInteger)
 
 ###############################################################################
 """
