@@ -228,7 +228,7 @@ print(evens_to_50)
 print('A' ^ 'B')
 
 
-cubes_by_four = [(x ** 3) for x in range(1, 11) if ((x ** 3) % 4 == 0)] 
+cubes_by_four = [(x ** 3) for x in range(1, 11) if ((x ** 3) % 4 == 0)]
 print(cubes_by_four)
 
 """
@@ -425,6 +425,8 @@ chamada da função
 
 def teste():
     print("Teste de função")
+
+
 teste()
 
 # Função com passagem de parâmetros
@@ -434,6 +436,7 @@ def teste_parametro(numero):
     numero *= 2
     print("O dobro do número digitado é %s" % (numero))
 
+
 teste_parametro(10)
 
 # Função com retorno
@@ -441,6 +444,7 @@ teste_parametro(10)
 
 def mutiplica(num1, num2):
     return num1 * num2
+
 
 ###############################################################################
 """
@@ -582,3 +586,20 @@ from datetime *
 from datetime import datetime
 
 ###############################################################################
+"""
+Funções Anônimas
+
+
+Python permite Programação Funcional, que permite passar funções como Variáveis 
+ou Valores. Essas funções nãoprecisam de nome (Função Anônima)
+"""
+
+
+def by_three(x):
+    return x % 3 == 0
+
+
+Print(by_three)
+
+my_list = range(0, 16)
+print filter(lambda x: x % 3 == 0, my_list)
