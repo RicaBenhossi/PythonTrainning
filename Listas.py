@@ -178,4 +178,3 @@ for y in range(1, 4):
 x = ['num1', 'num2', 'num3', 'num4', 'num5', 'num6']
 for y in range(1, 6, 2):
     print(x[y])
-

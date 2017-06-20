@@ -2,8 +2,28 @@
 Este arquivo é para lembrar os comandos mais básicos de python.
 Segue abaixo os comandos.
 """
-###############################################################################
 
+###############################################################################
+"""
+Importar bibliotecas
+As bibliotecas possuem diversas classes e pode-se importar a biblioteca toda,
+ou apenas a classe desejada.
+*** Para mais bibliotecas e funções prontas, cheque o arquivo
+    FUNCOEPREDEFINIDAS.py ***
+
+SINTAXE
+importar a bilbioteca toda:
+from modulo import *
+importar somente algumas classes daquela biblioteca:
+from modulo import classe1, classe2, classe3...
+"""
+# Importar a biblioteca TODA
+from datetime *
+
+# Importar a classe datetime da bibioteca datetime Python
+from datetime import datetime
+
+###############################################################################
 """
 Exibe algo na tela
 
@@ -102,26 +122,6 @@ print(vTexto)
 
 ###############################################################################
 """
-Importar bibliotecas
-As bibliotecas possuem diversas classes e pode-se importar a biblioteca toda,
-ou apenas a classe desejada.
-*** Para mais bibliotecas e funções prontas, cheque o arquivo
-    FUNCOEPREDEFINIDAS.py ***
-
-SINTAXE
-importar a bilbioteca toda:
-from modulo import *
-importar somente algumas classes daquela biblioteca:
-from modulo import classe1, classe2, classe3...
-"""
-# Importar a biblioteca TODA
-from datetime *
-
-# Importar a classe datetime da bibioteca datetime Python
-from datetime import datetime
-
-###############################################################################
-"""
 TYPES
 
 Exibe o tipo da variável
@@ -217,4 +217,3 @@ elif num > 10:
     print("O número digitado é maior que 10")
 else:
     print("O número digitado é 10")
-
