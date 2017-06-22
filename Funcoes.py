@@ -128,3 +128,8 @@ print(by_three)
 
 my_list = list(range(0, 16))
 print(filter(lambda x: x % 3 == 0, my_list))
+
+
+garbled = 'IXXX aXXmX aXXXnXoXXXXXtXhXeXXXXrX sXXXXeXcXXXrXeXt mXXeXsXXXsXaXXXXXXgXeX!XX'
+message = filter(lambda x: x != 'X', garbled)
+print(message)
