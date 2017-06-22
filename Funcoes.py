@@ -115,16 +115,14 @@ print("O Valor Total da Viagem é de: " + str(trip_cost("Los Angeles", 5, 600)))
 Funções Anônimas
 
 
-Python permite Programação Funcional, que permite passar funções como Variáveis
-ou Valores. Essas funções nãoprecisam de nome (Função Anônima)
+Em Python é avceito Programação Funcional, que permite passar funções como Variáveis
+ou Valores. Essas funções não precisam de nome (Função Anônima ou Lambda)
 """
 
+numbers = [10, 33, 21, 4]
+print(list(filter(lambda a: a * 2, numbers)))
 
-def by_three(x):
-    return x % 3 == 0
-
-
-print(by_three)
-
-my_list = list(range(0, 16))
-print(filter(lambda x: x % 3 == 0, my_list))
+# Para usar filter e lambda com uma lista, precisa colocar a exibção (print) do conteúdo do filter detro da função LIST.
+# Sintaxe: print(list(filter(lamda, lista)))
+squares = [x ** 2 for x in range(1, 11)]
+print(list(filter(lambda x: x in range(30, 71), squares)))
