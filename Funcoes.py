@@ -124,5 +124,10 @@ print(list(filter(lambda a: a * 2, numbers)))
 
 # Para usar filter e lambda com uma lista, precisa colocar a exibção (print) do conteúdo do filter detro da função LIST.
 # Sintaxe: print(list(filter(lamda, lista)))
+
 squares = [x ** 2 for x in range(1, 11)]
 print(list(filter(lambda x: x in range(30, 71), squares)))
+
+garbled = 'IXXX aXXmX aXXXnXoXXXXXtXhXeXXXXrX sXXXXeXcXXXrXeXt mXXeXsXXXsXaXXXXXXgXeX!XX'
+message = filter(lambda x: x != 'X', garbled)
+print(message)
