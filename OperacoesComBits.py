@@ -51,3 +51,27 @@ onze = 0b1011
 doze = 0b1100
 
 print(um, dois, tres, quatro, cinco, seis, sete, oito, nove, dez, onze, doze)
+
+"""
+Função BIN - esta função mostra a forma binária de um número
+
+Syntaxe: bin(caracter)
+"""
+
+print(bin(12))
+print(bin(100))
+print(bin(999))
+print(bin(2))
+
+print(bin(12))
+
+"""
+Função INT - mesma função que transforma uma string em inteiro e que possui um parâmetro opcional, referente à base que este número está
+
+Syntaxe: int(numero, base_desse_número)
+"""
+
+# Transforma o número (string) que está na base 2 (binário).
+print(int('11', 2))
+print(int('111', 2))
+print(int(bin(4), 2))
