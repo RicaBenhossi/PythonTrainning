@@ -53,7 +53,7 @@ doze = 0b1100
 print(um, dois, tres, quatro, cinco, seis, sete, oito, nove, dez, onze, doze)
 
 """
-Função BIN - esta função mostra a forma binária de um número
+Função BIN - esta função mostra a forma binária de um número.
 
 Syntaxe: bin(caracter)
 """
@@ -63,7 +63,8 @@ print(bin(100))
 print(bin(999))
 print(bin(2))
 
-print(bin(12))
+print(bin(0b011))
+print(bin(0b000110))
 
 """
 Função INT - mesma função que transforma uma string em inteiro e que possui um parâmetro opcional, referente à base que este número está
@@ -75,3 +76,33 @@ Syntaxe: int(numero, base_desse_número)
 print(int('11', 2))
 print(int('111', 2))
 print(int(bin(4), 2))
+
+"""
+Deslocamento de bits - Desloc os bits de um número um número designado de posições.
+
+SINTAXE:    variável = numero_binário << posições (desloca para a esquerda).
+            variável = numero_binário >> posições (desloca para a direita). 
+
+O deslocamento para a ESQUERDA (<<) equivale a uma DIVISÃO por 2 arredondada para o menor inteiro mais próximo.
+O deslocamento para a DIREITA (>>) equivale a uma MULTIPLICAÇÃO por 2 arredondada para o menor inteiro mais próximo
+
+*** Note que você só pode realizar operações no nível dos bits em números inteiros. Outras vriáveis resultarão em saídas estranhas.
+"""
+
+shift_right = 0b1100
+shift_left = 0b1
+
+shift_right_decimal = int(shift_right)
+shift_left_decimal = int(shift_left)
+
+# Deslocamento para a direita Multiplicação
+shift_right = shift_right >> 2
+# Deslocamento para a esquerda divisão.
+shift_left = shift_left << 2
+
+print('Shift_right em base decimal: ' + str(shift_right_decimal))
+print('Shift_left em base decimal: ' + str(shift_left_decimal))
+print('Shift_right em base binária deslocado 2 casas para a DIREITA: ' + str(bin(shift_right)))
+print('Shift_right em base decimal deslocado 2 casas para a DIREITA: ' + str(int(shift_right)))
+print('Shift_left em base binária deslocado 2 casas para a ESQUERDA: ' + str(bin(shift_left)))
+print('Shift_left em base decimal deslocado 2 casas para a ESQUERDA: ' + str(int(shift_left)))
