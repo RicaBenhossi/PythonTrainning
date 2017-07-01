@@ -177,6 +177,7 @@ O opreador ~ simplesmente invrerte os bits em un único número, o que equivale 
 ~1 = -2
 ~10 = -11
 ~(-9) = 8
+-(~9) = 10
 """
 
 print(~10)
