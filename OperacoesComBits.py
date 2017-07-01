@@ -106,3 +106,79 @@ print('Shift_right em base binária deslocado 2 casas para a DIREITA: ' + str(bi
 print('Shift_right em base decimal deslocado 2 casas para a DIREITA: ' + str(int(shift_right)))
 print('Shift_left em base binária deslocado 2 casas para a ESQUERDA: ' + str(bin(shift_left)))
 print('Shift_left em base decimal deslocado 2 casas para a ESQUERDA: ' + str(int(shift_left)))
+
+
+"""
+Operador AND &
+
+O opreador & retorna 1 quando os dois números comparados são IGUAIS a 1.
+
+0 & 0 = 0
+0 & 1 = 0
+1 & 0 = 0
+1 & 1 = 1
+"""
+
+nbin1 = 0b1110
+nbin2 = 0b101
+
+print(str(int(nbin1)))
+print(str(int(nbin2)))
+
+print(bin(nbin1 & nbin2))
+print(str(int(nbin1 & nbin2)))
+
+"""
+Operador OR |
+
+O opreador | retorna 1 quando QUALQUER UM DOS DOS números comparados são IGUAIS a 1.
+
+0 | 0 = 0
+0 | 1 = 1
+1 & 0 = 1
+1 & 1 = 1
+"""
+
+nbin1 = 0b1110
+nbin2 = 0b101
+
+print(str(int(nbin1)))
+print(str(int(nbin2)))
+
+print(bin(nbin1 | nbin2))
+print(str(int(nbin1 | nbin2)))
+
+"""
+Operador XOR ^ ou EXCLUSIVO
+
+O opreador ^ retorna 1 quando APENAS UM DOS DOS números comparados são IGUAIS a 1.
+
+0 ^ 0 = 0
+0 ^ 1 = 1
+1 ^ 0 = 1
+1 ^ 1 = 0
+"""
+
+nbin1 = 0b1110
+nbin2 = 0b101
+
+print(str(int(nbin1)))
+print(str(int(nbin2)))
+
+print(bin(nbin1 ^ nbin2))
+print(str(int(nbin1 ^ nbin2)))
+
+"""
+Operador NOT ~
+
+O opreador ~ simplesmente invrerte os bits em un único número, o que equivale à somar 1 à ele e torná-lo negativo.
+
+~0 = -1
+~1 = -2
+~10 = -11
+~(-9) = 8
+"""
+
+print(~10)
+print(~(-10))
+print(-(~10))
