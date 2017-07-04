@@ -183,3 +183,20 @@ O opreador ~ simplesmente invrerte os bits em un único número, o que equivale 
 print(~10)
 print(~(-10))
 print(-(~10))
+
+"""
+Máscara de BITs
+
+Uma máscara de bits é apenas uma variável que ajuda você com operações no nível dos bits.
+Ela pode ajudá-lo a ativar alguns bits, desativar outros, ou apenas coletar dados sobre
+quais bits estão ativados ou desativado em um número inteiro.
+"""
+
+check_bit4 = int(input("Digite um númro: "))
+print(type(check_bit4))
+quarto_bit = bin(check_bit4[3])
+if (4bit > 0):
+    return "Ativo"
+else:
+    return "off"
+    
