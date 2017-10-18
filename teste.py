@@ -5,5 +5,3 @@ def check_bit4(item):
         return "off"
 
 check_bit4(int(input("Digite um númro: ")))
-
-print("teste git")
