@@ -15,7 +15,7 @@ SINTAXE
 importar a bilbioteca toda:
 from modulo import *
 importar somente algumas classes daquela biblioteca:
-from modulo import classe1, classe2, classe3...
+from modulo import classe1, classe2, classe3 etc...
 """
 # Importar a biblioteca TODA
 from datetime *
